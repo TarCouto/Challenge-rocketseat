@@ -1,0 +1,53 @@
+.commentForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem;
+    gap: 0.5rem;
+    position: absolute;
+    width: 28.25rem;
+    height: 3.375rem;
+    left: calc(50% - 28.25rem/2 - 4.9375rem);
+    top: 11.125rem;
+  }
+  
+  .commentForm textarea {
+    background: var(--gray-500);
+    width: 35.875rem;
+    height: 3.375rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    border: none;
+    outline: none;
+    flex: 1;
+    color: white;
+  }
+  
+  .commentForm button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 5.625rem;
+    height: 3.25rem;
+    position: absolute;
+    top: 0.0625rem;
+    left: 36.0625rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    gap: 0.5rem;
+    background: #1E6F9F;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+
+  }
+  
+  
+  
+
+
+  

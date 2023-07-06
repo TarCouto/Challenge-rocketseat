@@ -1,0 +1,74 @@
+.divGeral {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+  
+    position: absolute;
+    width: 736px;
+    height: 287px;
+    left: calc(50% - 736px/2);
+    top: 291px;
+
+    
+  }
+  
+  .divGeral header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Adicionei esta linha */
+  }
+  
+  .divGeral main {
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+
+  }
+  
+  .contador {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4EA8DE;
+  
+    white-space: nowrap;
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-align: left; /* Adicionei esta linha */
+  }
+  
+  .TasksContainer {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8284FA;
+  
+    white-space: nowrap;
+  
+    flex: end;
+    order: 0;
+    flex-grow: 0;
+    text-align: right; /* Adicionei esta linha */
+  }
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 87.5%;
+    }
+  
+    .divGeral {
+      grid-template-columns: 1fr;
+    }
+  }
+  
