@@ -19,17 +19,14 @@ const initialTasks: Task[] = [
 ];
 
 const initialCompletedTasks = 0;
-const initialCountTask = initialTasks.length;
 
 export function App() {
   const [tasks, setTasks] = useState<Task[]>(initialTasks);
   const [completedTasks, setCompletedTasks] = useState<number>(initialCompletedTasks);
-  const [countTask, setCountTask] = useState<number>(initialCountTask);
 
   function addTask(task: string) {
     const newTask: Task = { id: tasks.length + 1, content: task, completed: false };
     setTasks([...tasks, newTask]);
-    setCountTask(countTask + 1);
   }
 
   function handleTaskCompletion(taskId: number) {
@@ -43,11 +40,12 @@ export function App() {
   }
 
   function handleDeleteTask(tasksToDelete: Task){
-    const tasksWithoutDeleteOne = tasks.filter(comment => {
-      return comment !== tasksToDelete;
-    })
+    const tasksWithoutDeleteOne = tasks.filter(task => task !== tasksToDelete);
     setTasks(tasksWithoutDeleteOne);
   }
+
+  const countTask = tasks.length; // Contagem de tarefas deriva diretamente do array
+
   return (
     <div>
       <Header />
